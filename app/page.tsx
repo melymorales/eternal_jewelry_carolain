@@ -91,7 +91,7 @@ function ViewMoreButton({ link }: { link: string }) {
   );
 }
 
-export const revalidate = 10;
+export const revalidate = 60;
 
 export default async function Home() {
 
