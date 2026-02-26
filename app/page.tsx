@@ -91,6 +91,8 @@ function ViewMoreButton({ link }: { link: string }) {
   );
 }
 
+export const revalidate = 10;
+
 export default async function Home() {
 
   const collares = await getProductsByCategory("collar");
