@@ -126,7 +126,7 @@ export default async function Home() {
           </h2>
 
           <p className="mt-12 text-white/90 text-xl font-light">
-            Joyería en acero inoxidable y plata S925
+            Joyería en Acero Inoxidable y Baños de Oro de gran calidad
           </p>
 
           <p className="mt-3 text-white/90 text-xl font-light">
@@ -189,14 +189,11 @@ export default async function Home() {
 
           <div className="text-lg text-[#5F7178] leading-relaxed space-y-15">
             <p>
-              Eternal Jewelry es más que una joyería, es una experiencia que conecta
-              elegancia y permanencia. Trabajamos con acero inoxidable de alta calidad,
-              baños de oro y plata S925 para crear piezas únicas que perduren en el tiempo.
+              Eternal Jewelry más que joyería, es una experiencia que conecta elegancia y permanecia. Trabajamos piezas en acero inoxidable y baños de oro brindándote calidad en cada pieza que adquieres.
             </p>
 
             <p>
-              Nuestras pulseras permanentes son una experiencia única donde cada pieza
-              se convierte en parte de tu historia.
+             Con nuestras pulseras permanentes te brindamos una experiencia única donde cada pieza se convierte en parte de tu historia.
             </p>
 
             <p className="font-medium">
@@ -246,7 +243,7 @@ export default async function Home() {
         {/* MAPA UBICACIÓN */}
         <div className="rounded-3xl overflow-hidden shadow-lg mx-auto max-w-4xl mb-12">
           <iframe
-            src="https://www.google.com/maps?q=9.907552,-83.6755614&z=17&output=embed"
+            src="https://www.google.com/maps?q=9.906889,-83.671806&z=17&output=embed"
             width="100%"
             height="400"
             style={{ border: 0 }}
@@ -257,7 +254,7 @@ export default async function Home() {
 
         <div className="text-gray-600 text-lg space-y-2">
           <a
-            href="https://www.google.com/maps/place/Provincia+de+Cartago,+Turrialba,+Coyol/@9.907552,-83.6755614,17z"
+            href="https://www.google.com/maps?q=9.906889,-83.671806"
             target="_blank"
             rel="noopener noreferrer"
             className="text-xl hover:text-[#D4AF37] transition"
