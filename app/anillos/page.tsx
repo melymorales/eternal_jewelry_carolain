@@ -48,6 +48,11 @@ export default async function Anillos() {
                     alt={product.fields.nombreProducto}
                     className="w-full h-full object-cover group-hover:scale-110 transition duration-700"
                   />
+                  {product.fields.promocion && (
+                    <div className="absolute top-4 left-4 bg-[#D4AF37] text-white text-xs px-4 py-1 rounded-full shadow-md font-medium tracking-wide">
+                      Oferta
+                    </div>
+                  )}
                 </div>
               )}
 
@@ -56,9 +61,22 @@ export default async function Anillos() {
                   {product.fields.nombreProducto}
                 </h3>
 
-                <p className="text-2xl font-light text-[#5F7178] mb-6">
-                  ₡{product.fields.precioProducto}
-                </p>
+                {product.fields.promocion ? (
+                  <div className="flex flex-col items-center gap-1">
+                    <p className="text-sm line-through text-[#5F7178]/50">
+                      ₡{product.fields.precioProducto}
+                    </p>
+                    <p className="text-2xl text-[#D4AF37] font-light tracking-wide">
+                      ₡{product.fields.precioPromocional}
+                    </p>
+                  </div>
+                ) : (
+                  <p className="text-2xl text-[#5F7178] font-light tracking-wide">
+                    ₡{product.fields.precioProducto}
+                  </p>
+                )}
+
+                <br />
 
                 <a
                   href={`https://wa.me/50685412692?text=${encodeURIComponent(
